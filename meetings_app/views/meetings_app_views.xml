@@ -20,7 +20,7 @@ before using action= attribute -->
             parent="main_menu_meetings"
         />
         <!-- Menu item to open Meetings list -->
-        <!-- Prueba Github -->
+        <!-- Prueba Githubbb -->
         <menuitem
             id="menu_meetings"
             name="Meetings"
