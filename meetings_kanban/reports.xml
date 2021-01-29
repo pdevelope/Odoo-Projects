@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <report 
+        id="report_meetings_hours" 
+        model="meetings" 
+        string="Horas Asignadas" 
+        report_type="qweb-pdf" 
+        name="meetings_kanban.report_task_hours" 
+        attachment_use="False" 
+        file="meetings_kanban.report_task_hours" />
+</odoo>
