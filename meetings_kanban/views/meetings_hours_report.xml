@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_task_hours"> 
+        <t t-call="web.html_container"> 
+            <t t-foreach="docs" t-as="o"> 
+                <t t-call="web.external_layout"> 
+                    <div class="page"> 
+                        <h2> Horas asignadas de tareas</h2> 
+                        <p> El asunto de esta tarea es <span t-field="o.asunto"/></p> 
+                        <table>
+                          <tr>
+                            <th>Responsable</th>
+                            <th>Participantes</th>
+                            <th>Horas</th>
+                            <th>Fecha Reunión</th>
+                          </tr>
+                          <tr>
+                            <td><span t-field="o.user_id"/></td>
+                            <td><span t-field="o.participantes_estimados"/></td>
+                            <td><span t-field="o.horas_estimadas"/></td>
+                            <td><span t-field="o.date_deadline"/></td>
+                          </tr>
+                      </table>
+                    </div> 
+                </t> 
+            </t> 
+        </t> 
+    </template>
+</odoo>
